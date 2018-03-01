@@ -8,6 +8,10 @@
 
 #import "BaseVC.h"
 
+/**
+ layer  layer 的 属性 contents,contentsGravity, contentsScale,masksToBounds，contentsRect，contentsCenter
+ layer 的 frame 
+ */
 @interface Layer1VC : BaseVC
 
 @end
