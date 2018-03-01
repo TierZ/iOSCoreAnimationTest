@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseVC.h
 //  AnimationDemo
 //
 //  Created by 李清娟 on 2017/8/17.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseVC.h"
-@interface ViewController : BaseVC
+#import "Masonry.h"
 
-
+@interface BaseVC : UIViewController
+@property (nonatomic,strong)UIScrollView * bgScroll;
 @end
-
