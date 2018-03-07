@@ -18,6 +18,10 @@
 		8459177B20479FE0009336BD /* iOSCoreAnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8459177A20479FE0009336BD /* iOSCoreAnimationTestUITests.m */; };
 		8459178A2047C87C009336BD /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845917892047C87C009336BD /* BaseVC.m */; };
 		8459178D2047CEBE009336BD /* Layer1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8459178C2047CEBE009336BD /* Layer1VC.m */; };
+		8459179020484013009336BD /* UIScrollView+UITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8459178F20484013009336BD /* UIScrollView+UITouch.m */; };
+		845917932048EB0E009336BD /* Layer2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 845917922048EB0E009336BD /* Layer2VC.m */; };
+		84591796204E6FB3009336BD /* Layer3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84591795204E6FB3009336BD /* Layer3VC.m */; };
+		84591799204FB9F2009336BD /* LayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84591798204FB9F2009336BD /* LayerLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,14 @@
 		845917892047C87C009336BD /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		8459178B2047CEBE009336BD /* Layer1VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Layer1VC.h; sourceTree = "<group>"; };
 		8459178C2047CEBE009336BD /* Layer1VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Layer1VC.m; sourceTree = "<group>"; };
+		8459178E20484013009336BD /* UIScrollView+UITouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+UITouch.h"; sourceTree = "<group>"; };
+		8459178F20484013009336BD /* UIScrollView+UITouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+UITouch.m"; sourceTree = "<group>"; };
+		845917912048EB0E009336BD /* Layer2VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Layer2VC.h; sourceTree = "<group>"; };
+		845917922048EB0E009336BD /* Layer2VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Layer2VC.m; sourceTree = "<group>"; };
+		84591794204E6FB3009336BD /* Layer3VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Layer3VC.h; sourceTree = "<group>"; };
+		84591795204E6FB3009336BD /* Layer3VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Layer3VC.m; sourceTree = "<group>"; };
+		84591797204FB9F2009336BD /* LayerLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerLabel.h; sourceTree = "<group>"; };
+		84591798204FB9F2009336BD /* LayerLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerLabel.m; sourceTree = "<group>"; };
 		86ABDDE06824D208040F749F /* libPods-iOSCoreAnimationTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSCoreAnimationTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8847038F39EA4F0240B91F45 /* libPods-iOSCoreAnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSCoreAnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14A28E654294164D28E7FBF /* Pods-iOSCoreAnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCoreAnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSCoreAnimationTest/Pods-iOSCoreAnimationTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +136,14 @@
 				845917892047C87C009336BD /* BaseVC.m */,
 				8459178B2047CEBE009336BD /* Layer1VC.h */,
 				8459178C2047CEBE009336BD /* Layer1VC.m */,
+				845917912048EB0E009336BD /* Layer2VC.h */,
+				845917922048EB0E009336BD /* Layer2VC.m */,
+				84591794204E6FB3009336BD /* Layer3VC.h */,
+				84591795204E6FB3009336BD /* Layer3VC.m */,
+				8459178E20484013009336BD /* UIScrollView+UITouch.h */,
+				8459178F20484013009336BD /* UIScrollView+UITouch.m */,
+				84591797204FB9F2009336BD /* LayerLabel.h */,
+				84591798204FB9F2009336BD /* LayerLabel.m */,
 				8459175C20479FE0009336BD /* Main.storyboard */,
 				8459175F20479FE0009336BD /* Assets.xcassets */,
 				8459176120479FE0009336BD /* LaunchScreen.storyboard */,
@@ -357,11 +377,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84591799204FB9F2009336BD /* LayerLabel.m in Sources */,
 				8459175B20479FE0009336BD /* ViewController.m in Sources */,
 				8459176620479FE0009336BD /* main.m in Sources */,
 				8459175820479FE0009336BD /* AppDelegate.m in Sources */,
 				8459178A2047C87C009336BD /* BaseVC.m in Sources */,
 				8459178D2047CEBE009336BD /* Layer1VC.m in Sources */,
+				845917932048EB0E009336BD /* Layer2VC.m in Sources */,
+				84591796204E6FB3009336BD /* Layer3VC.m in Sources */,
+				8459179020484013009336BD /* UIScrollView+UITouch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

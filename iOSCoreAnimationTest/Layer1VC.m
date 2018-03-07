@@ -63,7 +63,7 @@
     [self.clockIV addSubview:self.secondIV];
     [self.clockIV mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake( 326, 321));
-        make.top.mas_equalTo(150);
+        make.top.mas_equalTo(200);
         make.centerX.equalTo(self.bgScroll);
     }];
     [self.hourIV mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -85,8 +85,6 @@
     _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(tick) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
 
-    
-    
 }
 
 - (void)tick {
@@ -104,6 +102,30 @@
     self.minuteIV.transform = CGAffineTransformMakeRotation(minsAngle);
     self.secondIV.transform = CGAffineTransformMakeRotation(secsAngle);
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    CGPoint point = [[touches anyObject]locationInView:self.bgScroll];
+    point = [self.layerView.layer convertPoint:point fromLayer:self.bgScroll.layer];
+//    if ([self.layerView.layer containsPoint:point]) {
+//        point = [self.blueLayer convertPoint:point fromLayer:self.layerView.layer];
+//        if ([self.blueLayer containsPoint:point]) {
+//            [[[UIAlertView alloc] initWithTitle:@"Inside Blue Layer" message:nil
+//                                       delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+//        }else{
+//            [[[UIAlertView alloc] initWithTitle:@"inside layerVIew Layer" message:nil
+//                                       delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+//        }
+//    }else{
+//        [[[UIAlertView alloc] initWithTitle:@"outside layerview Layer" message:nil
+//                                   delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+//    }
+    
+    CALayer * layer = [self.layerView.layer hitTest:point];
+    if (layer==self.blueLayer) {
+        //..
+    }
+}
+
+
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     if (self.timer&&[self.timer isValid]) {

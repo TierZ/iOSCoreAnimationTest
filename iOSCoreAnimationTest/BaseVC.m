@@ -21,6 +21,7 @@
     // Do any additional setup after loading the view.
     self.bgScroll = [[UIScrollView alloc]init];
     self.bgScroll.backgroundColor = RandomColor(1);
+    self.bgScroll.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:self.bgScroll];
     [self.bgScroll mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(64, 0, 0, 0));

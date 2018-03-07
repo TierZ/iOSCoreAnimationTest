@@ -64,7 +64,7 @@ static NSString * kAnimationListId = @"kAnimationListId";
 
 -(NSMutableArray *)arr{
     if (!_arr) {
-        NSArray * a = @[@"Layer1VC"];
+        NSArray * a = @[@"Layer1VC",@"Layer2VC",@"Layer3VC"];
         _arr = [NSMutableArray arrayWithArray:a];
     }
     return _arr;
