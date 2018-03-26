@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A809643B3CF6D2D4B48C64D /* libPods-iOSCoreAnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8847038F39EA4F0240B91F45 /* libPods-iOSCoreAnimationTest.a */; };
+		8449400B205A6FA90094F5DE /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8449400A205A6FA90094F5DE /* AnimationVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8459175820479FE0009336BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8459175720479FE0009336BD /* AppDelegate.m */; };
 		8459175B20479FE0009336BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8459175A20479FE0009336BD /* ViewController.m */; };
 		8459175E20479FE0009336BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8459175C20479FE0009336BD /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		149B46A9C405031FDA8A4FCB /* Pods-iOSCoreAnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCoreAnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSCoreAnimationTest/Pods-iOSCoreAnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		84494009205A6FA90094F5DE /* AnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationVC.h; sourceTree = "<group>"; };
+		8449400A205A6FA90094F5DE /* AnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationVC.m; sourceTree = "<group>"; };
 		8459175320479FE0009336BD /* iOSCoreAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCoreAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8459175620479FE0009336BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8459175720479FE0009336BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				845917922048EB0E009336BD /* Layer2VC.m */,
 				84591794204E6FB3009336BD /* Layer3VC.h */,
 				84591795204E6FB3009336BD /* Layer3VC.m */,
+				84494009205A6FA90094F5DE /* AnimationVC.h */,
+				8449400A205A6FA90094F5DE /* AnimationVC.m */,
 				8459178E20484013009336BD /* UIScrollView+UITouch.h */,
 				8459178F20484013009336BD /* UIScrollView+UITouch.m */,
 				84591797204FB9F2009336BD /* LayerLabel.h */,
@@ -382,6 +387,7 @@
 				8459176620479FE0009336BD /* main.m in Sources */,
 				8459175820479FE0009336BD /* AppDelegate.m in Sources */,
 				8459178A2047C87C009336BD /* BaseVC.m in Sources */,
+				8449400B205A6FA90094F5DE /* AnimationVC.m in Sources */,
 				8459178D2047CEBE009336BD /* Layer1VC.m in Sources */,
 				845917932048EB0E009336BD /* Layer2VC.m in Sources */,
 				84591796204E6FB3009336BD /* Layer3VC.m in Sources */,
@@ -550,6 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLFS2B77AN;
 				INFOPLIST_FILE = iOSCoreAnimationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZXD.iOSCoreAnimationTest;
@@ -564,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLFS2B77AN;
 				INFOPLIST_FILE = iOSCoreAnimationTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZXD.iOSCoreAnimationTest;

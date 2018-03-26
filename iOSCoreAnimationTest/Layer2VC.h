@@ -7,7 +7,7 @@
 //
 
 #import "BaseVC.h"
-
+// layer 的变换 视觉效果  transform 圆角 阴影
 @interface Layer2VC : BaseVC
 
 @end

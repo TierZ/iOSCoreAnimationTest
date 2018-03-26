@@ -8,7 +8,6 @@
 
 #import "BaseVC.h"
 
-#define RandomColor(a) [UIColor colorWithRed:arc4random()%256/255.0 green:arc4random()%256/255.0 blue:arc4random()%256/255.0 alpha:a]
 @interface BaseVC ()
 
 @end
@@ -23,10 +22,8 @@
     self.bgScroll.backgroundColor = RandomColor(1);
     self.bgScroll.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:self.bgScroll];
-    [self.bgScroll mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(64, 0, 0, 0));
-    }];
 
+    self.bgScroll.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64);
 }
 
 - (void)didReceiveMemoryWarning {
